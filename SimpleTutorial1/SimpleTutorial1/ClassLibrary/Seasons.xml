@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Seasons>
+    <Season Name="Spring" />
+    <Season Name="Summer" />
+    <Season Name="Autumn" />
+    <Season Name="Winter" />
+</Seasons>

@@ -1,0 +1,15 @@
+﻿@using RazorLight;
+@inherits TemplatePage<ShitConsoleApp.TemplateModels.Entity>;
+
+using @(Model.Namespace)
+[Table(@(Model.TableName))]
+public partial class @(Model.ClassName) : FullAuditedEntity
+{
+    public @(nameof(Model.Key)) Id { get; set; }
+
+    @(foreach (var prop in Model.Props))
+    {
+        [AbpDisplayName(nameof(@(Model.ClassName),nameof(@(prop.Name)))]
+        public virtual @(prop.Type) @(prop.Name) { get; set; }
+    }
+}

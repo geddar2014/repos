@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XBet.Web", "XBet\XBet.Web.csproj", "{0BCDE19A-6A18-48B8-A609-FF85FBE1BEFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XBet.Domain", "XBet.Domain\XBet.Domain.csproj", "{5088E34D-CEA4-4CE9-80C5-1D0118FA77CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XBet.Services", "XBet.Services\XBet.Services.csproj", "{663211BD-1560-4751-88BE-526F04AF89E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XBet.Core", "XBet.Core\XBet.Core.csproj", "{C52F21C8-26C9-4E5E-A3D7-5BDF9B2B425C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XBet.Data", "XBet.Data\XBet.Data.csproj", "{3DA5ABE8-B6ED-4A5C-9C22-D05115C34433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XBet.Tests", "XBet.Tests\XBet.Tests.csproj", "{7BD394A6-D21D-49EE-9B95-064248063A37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BCDE19A-6A18-48B8-A609-FF85FBE1BEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCDE19A-6A18-48B8-A609-FF85FBE1BEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCDE19A-6A18-48B8-A609-FF85FBE1BEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCDE19A-6A18-48B8-A609-FF85FBE1BEFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5088E34D-CEA4-4CE9-80C5-1D0118FA77CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5088E34D-CEA4-4CE9-80C5-1D0118FA77CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5088E34D-CEA4-4CE9-80C5-1D0118FA77CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5088E34D-CEA4-4CE9-80C5-1D0118FA77CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663211BD-1560-4751-88BE-526F04AF89E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663211BD-1560-4751-88BE-526F04AF89E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663211BD-1560-4751-88BE-526F04AF89E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663211BD-1560-4751-88BE-526F04AF89E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52F21C8-26C9-4E5E-A3D7-5BDF9B2B425C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52F21C8-26C9-4E5E-A3D7-5BDF9B2B425C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52F21C8-26C9-4E5E-A3D7-5BDF9B2B425C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52F21C8-26C9-4E5E-A3D7-5BDF9B2B425C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA5ABE8-B6ED-4A5C-9C22-D05115C34433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA5ABE8-B6ED-4A5C-9C22-D05115C34433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA5ABE8-B6ED-4A5C-9C22-D05115C34433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA5ABE8-B6ED-4A5C-9C22-D05115C34433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD394A6-D21D-49EE-9B95-064248063A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD394A6-D21D-49EE-9B95-064248063A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD394A6-D21D-49EE-9B95-064248063A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD394A6-D21D-49EE-9B95-064248063A37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9333AEE-8F85-406B-B9A6-526E6C515E3D}
+	EndGlobalSection
+EndGlobal

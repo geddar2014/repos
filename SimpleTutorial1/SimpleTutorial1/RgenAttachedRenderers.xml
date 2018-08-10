@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RgenAttachedRenderersXmlFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.reegenerator.com/RgenAttachInfoSchema.xsd">
+  <Items>
+    <Item ExecutionTrigger="FileSave" Path="$(SolutionDir)\ClassLibrary\Seasons.xml">
+      <AttachedRenderers>
+        <AttachedRenderer ClassName="RenderersLibrary.Seasons">
+          <ProjectPath>$(SolutionDir)\RenderersLibrary\RenderersLibrary.csproj</ProjectPath>
+        </AttachedRenderer>
+      </AttachedRenderers>
+    </Item>
+  </Items>
+</RgenAttachedRenderersXmlFile>
