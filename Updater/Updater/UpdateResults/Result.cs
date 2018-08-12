@@ -23,7 +23,7 @@ namespace Updater.UpdateResults
 					RunnerType  = RunnerType.Leagues;
 					Disposition = $"C:{c.CountryId}";
 					break;
-				case CountryIdLeagueIdArgs c:
+				case LeagueIdArgs c:
 					RunnerType  = RunnerType.Seasons;
 					Disposition = $"C:{c.CountryId} L:{c.LeagueId}";
 					break;

@@ -8,11 +8,11 @@ using Updater.UpdateResults;
 
 namespace Updater.Runners
 {
-	public class CountriesRunner : Runner<EmptyArgs, IList<GetCountriesOutput>>
+	public class CountriesLeaguesRunner : Runner<EmptyArgs, IList<GetCountriesLeaguesOutput>>
 	{
-		protected CountriesRunner(Result total = null) : base(total)
+		protected CountriesLeaguesRunner(Result total = null) : base(total)
 		{
-			_total = total ?? new Result(EmptyArgs.Create(), RunnerType.Countries);
+			_total = total ?? new Result(EmptyArgs.Create(), RunnerType.CountriesLeagues);
 		}
 
 		protected override async Task ProcessAsync(EmptyArgs args, Result result)
@@ -42,7 +42,7 @@ namespace Updater.Runners
 
 		public static void Run(Result total = null)
 		{
-			Task.Run(async () => await new CountriesRunner(total).RunAsync()).Wait();
+			Task.Run(async () => await new CountriesLeaguesRunner(total).RunAsync()).Wait();
 			//AsyncHelper.RunSync(async () => await new CountriesRunner(total).RunAsync());
 		}
 	}

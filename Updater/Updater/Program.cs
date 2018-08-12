@@ -21,7 +21,7 @@ namespace Updater
 
 			//var shit = stats.GetSpanList(10787777);
 
-			CountriesRunner.Run(total);
+			CountriesLeaguesRunner.Run(total);
 			//
 			LeaguesRunner.Run(total);
 			//

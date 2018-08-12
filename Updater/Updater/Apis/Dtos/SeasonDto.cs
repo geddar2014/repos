@@ -1,41 +1,32 @@
-﻿using Newtonsoft.Json;
+﻿using Insight.Database;
+using Newtonsoft.Json;
+using Updater.Common;
 
 namespace Updater.Apis.Dtos
 {
-	public class SeasonDto : DtoBase
-	{
-		[JsonConstructor]
-		public SeasonDto(int id, string title, int champStageId)
-		{
-			XBetSeasonId = id;
-			Title        = title;
-			LastStageId  = champStageId;
-		}
+    public class SeasonDto : IDto
+    {
+        [RecordId]
+        [JsonProperty("I")]
+        public string Id { get; set; }
 
-		public SeasonDto()
-		{
-		}
+        [JsonProperty("T")]
+        public string Title { get; set; }
 
-		public SeasonDto(int id, int countryId, int leagueId)
-		{
-			Id        = id;
-			CountryId = countryId;
-			LeagueId  = leagueId;
-		}
+        [ParentRecordId]
+        [JsonIgnore]
+        public string LeagueId { get; set; }
 
-		[JsonIgnore]
-		public int CountryId { get; set; }
+        [JsonConstructor]
+        public SeasonDto(string i, string t)
+        {
+            Id    = i;
+            Title = t;
+        }
 
-		[JsonIgnore]
-		public int LeagueId { get; set; }
-
-		[JsonProperty("ChampStageId")]
-		public int? LastStageId { get; set; }
-
-		[JsonProperty("Id")]
-		public int XBetSeasonId { get; set; }
-
-		[JsonProperty("Title")]
-		public string Title { get; set; }
-	}
+        public SeasonDto(string id, string title, string leagueId) : this(id, title)
+        {
+            LeagueId = leagueId;
+        }
+    }
 }

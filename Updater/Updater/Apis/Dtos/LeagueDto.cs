@@ -1,28 +1,32 @@
-﻿using Newtonsoft.Json;
+﻿using Insight.Database;
+using Newtonsoft.Json;
+using Updater.Common;
 
 namespace Updater.Apis.Dtos
 {
-	public class LeagueDto : DtoBase
-	{
-		public LeagueDto()
-		{
-		}
+    public class LeagueDto : IDto
+    {
+        [RecordId]
+        [JsonProperty("I")]
+        public string Id { get; set; }
 
-		[JsonConstructor]
-		public LeagueDto(int id, string msTitle)
-		{
-			Id    = id;
-			Title = msTitle;
-		}
+        [JsonProperty("T")]
+        public string Title { get; set; }
 
-		public LeagueDto(int id, int countryId)
-		{
-			Id        = id;
-			CountryId = countryId;
-		}
+        [ParentRecordId]
+        [JsonIgnore]
+        public string CountryId { get; set; }
 
-		public int CountryId { get; set; }
+        [JsonConstructor]
+        public LeagueDto(string i, string t)
+        {
+            Id    = i;
+            Title = t;
+        }
 
-		public string Title { get; set; }
-	}
+        public LeagueDto(string id, string title, string countryId) : this(id, title)
+        {
+            CountryId = countryId;
+        }
+    }
 }
