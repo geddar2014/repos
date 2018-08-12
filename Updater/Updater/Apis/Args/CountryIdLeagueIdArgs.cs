@@ -6,22 +6,22 @@
 		{
 		}
 
-		private CountryIdLeagueIdArgs(int countryId, int leagueId)
+		private CountryIdLeagueIdArgs(string countryId, string leagueId)
 		{
 			CountryId = countryId;
 			LeagueId  = leagueId;
 		}
 
-		public int CountryId { get; protected set; }
-		public int LeagueId  { get; protected set; }
+		public string CountryId { get; protected set; }
+		public string LeagueId  { get; protected set; }
 
 		public IRunnerArgs Create(params object[] parameters)
 		{
-			return new CountryIdLeagueIdArgs((int) parameters[0], (int) parameters[1]);
+			return new CountryIdLeagueIdArgs((string) parameters[0], (string) parameters[1]);
 		}
 
 
-		public static CountryIdLeagueIdArgs Create(int countryId, int leagueId)
+		public static CountryIdLeagueIdArgs Create(string countryId, string leagueId)
 		{
 			return (CountryIdLeagueIdArgs) new CountryIdLeagueIdArgs().Create((object) countryId, (object) leagueId);
 		}

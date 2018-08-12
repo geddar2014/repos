@@ -1,12 +1,15 @@
 ﻿using System;
+using MongoDB.Bson;
 
 namespace TimeStamp
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+	internal class Program
+	{
+		private static void Main(string[] args)
+		{
+			var arr = new BsonArray();
+			Console.WriteLine(arr.BsonType);
+			Console.ReadLine();
+		}
+	}
 }
