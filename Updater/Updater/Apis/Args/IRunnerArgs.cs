@@ -2,6 +2,6 @@
 {
 	public interface IRunnerArgs
 	{
-		IRunnerArgs Create(params object[] parameters);
+		//IRunnerArgs Create(params object[] parameters);
 	}
 }

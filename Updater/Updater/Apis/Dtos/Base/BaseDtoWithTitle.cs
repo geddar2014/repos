@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using Updater.Common;
 
-namespace Updater.Common
+namespace Updater.Apis.Dtos.Base
 {
-    public class BaseDtoWithTitle : BaseDto, IDtoWithTitle
+    public abstract class BaseDtoWithTitle : BaseDto, IDtoWithTitle
     {
-        [JsonProperty("T")]
-		[JsonProperty("N")]
-        public string Title { get; set; }
+        public virtual string Title { get; set; }
 
         public override string ToString()
         {

@@ -6,14 +6,14 @@
 		{
 		}
 
-		public IRunnerArgs Create(params object[] parameters)
+		public static IRunnerArgs Create(params object[] parameters)
 		{
 			return new EmptyArgs();
 		}
 
 		public static EmptyArgs Create()
 		{
-			return (EmptyArgs) new EmptyArgs().Create((object) null);
+			return (EmptyArgs) Create((object) null);
 		}
 	}
 }

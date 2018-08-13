@@ -16,25 +16,25 @@ namespace Updater.UpdateResults
 			switch (args)
 			{
 				case EmptyArgs e:
-					RunnerType  = RunnerType.Countries;
+					RunnerType  = RunnerType.CountriesLeagues;
 					Disposition = $"";
 					break;
-				case CountryIdArgs c:
-					RunnerType  = RunnerType.Leagues;
-					Disposition = $"C:{c.CountryId}";
-					break;
-				case LeagueIdArgs c:
+				//case CountryIdArgs c:
+				//	RunnerType  = RunnerType.Leagues;
+				//	Disposition = $"C:{c.CountryId}";
+				//	break;
+				case CountryIdLeagueIdArgs c:
 					RunnerType  = RunnerType.Seasons;
-					Disposition = $"C:{c.CountryId} L:{c.LeagueId}";
+					Disposition = $"C:{c.XCountryId} L:{c.XLeagueId}";
 					break;
 				case CountryIdLeagueIdSeasonIdArgs c:
 					RunnerType  = RunnerType.StagesGamesTeams;
-					Disposition = $"C:{c.CountryId} L:{c.LeagueId} S:{c.SeasonId}";
+					Disposition = $"C:{c.XCountryId} L:{c.XLeagueId} S:{c.XSeasonId}";
 					break;
-				case DateArgs d:
-					RunnerType  = RunnerType.DayStats;
-					Disposition = $"{d.Date.ToShortDateString()}";
-					break;
+				//case DateArgs d:
+				//	RunnerType  = RunnerType.DayStats;
+				//	Disposition = $"{d.Date.ToShortDateString()}";
+				//	break;
 			}
 		}
 

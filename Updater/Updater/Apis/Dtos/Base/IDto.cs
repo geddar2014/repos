@@ -1,6 +1,6 @@
-﻿using Updater.Repositories;
+﻿using Updater.Common;
 
-namespace Updater.Common
+namespace Updater.Apis.Dtos.Base
 {
 	public interface IDto : IHasId
 	{

@@ -2,7 +2,7 @@
 using Serilog;
 using Updater.Apis;
 using Updater.Apis.Args;
-using Updater.Runners;
+using Updater.Apis.Runners;
 using Updater.UpdateResults;
 
 namespace Updater
@@ -23,15 +23,11 @@ namespace Updater
 
 			CountriesLeaguesRunner.Run(total);
 			//
-			LeaguesRunner.Run(total);
-			//
 			SeasonsRunner.Run(total);
-			////
-			StageTeamGameRunner.Run(total);
 			//
-			DayStatsRunner.Run(total);
-
-			//GameStatsRunner.Run(total);
+			//StageTeamGameRunner.Run(total);
+			//
+			//DayStatsRunner.Run(total);
 
 			Console.WriteLine("END!!!");
 

@@ -1,4 +1,4 @@
-﻿namespace Updater.Common
+﻿namespace Updater.Apis.Dtos.Base
 {
 	public interface IHasId
 	{
